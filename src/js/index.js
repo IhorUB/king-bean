@@ -1,10 +1,16 @@
-/*import '../../node_modules/jquery/dist/jquery.min';*/  // Uncaught ReferenceError: $ is not defined
-import $ from 'jquery'; /*add library*/
-$('.jquery').html('Test JQuery'); /*test*/
-$('.jquery').css('text-align', 'center'); /*test*/
+
+import $ from 'jquery';
+import '../../node_modules/jquery/dist/jquery.slim.min';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/swiper/dist/css/swiper.min.css';
+import '../../node_modules/swiper/dist/js/swiper.min';
 import '../css/main.scss';
+import './swiper-partners';
 import './test'; /*always needs slash before name*/
+
+
+
+
 
 
 

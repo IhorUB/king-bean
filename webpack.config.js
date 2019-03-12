@@ -3,6 +3,7 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let CleanWebpackPlugin = require('clean-webpack-plugin');
 
+
 let conf = {
     entry: {
         index: './src/js/index.js'
