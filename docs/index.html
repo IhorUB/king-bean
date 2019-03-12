@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webpack</title>
+<link href="style.css" rel="stylesheet"></head>
+<body>
+<header>
+    <div class="banner-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><span>Головна</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>Про нас</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>Переваги</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>Виробництво</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>Галерея</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>Контакти</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-description col-8">
+                <h2>Вирощений з любов’ю, а не просто вироблений</h2>
+                <p>В таку холодну погоду "Королівський Ясь", особливо смачно поєднується з багатьма домашніми стравами.
+                    Скуштуйте та переконайтесь!</p>
+                <a href="#">
+                    <button type="button" class="btn-about">Дізнатись більше</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="lg-container container" id="about">
+        <h3>Про нас</h3>
+        <div class="about-wrapper">
+            <div class="row">
+                <div class="col-6 imgBox">
+                    <img src="img/product.png" alt="Королівський Ясь" class="img-responsive">
+                </div>
+                <div class="col-6 about-info">
+                    <p>Ми вирощуємо велику білу квасолю “Ясь королівський” в західній частині України, неподалік від
+                        міста Броди Львівської області. Це екологічно чистий продукт, який вирощено та зібрано із
+                        використанням виключно ручної праці. Це справді велика квасоля – розмір її 25-35 мм.<br><br>
+                        Наше підприємство не тільки вирощує квасолю, а й виробляє консервований “Ясь королівський”
+                        натуральний та в томаті. Компанію "Лада Органіка" було засновано 2015 року. Консервовану квасолю
+                        «Ясь Королівський» (в томаті та у своєму соці) ми виготовляємо за спеціальною рецептурою, яка
+                        зберігає натуральний смак та корисні властивості бобів.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 about-info">
+                    <p>З впевненістю можемо сказати, що квасоля дійсно особлива. Поживна, корисна, насичена вітамінами
+                        та цінними мікроелементами, які просто необхідні для розвитку здорового організму людини.
+                        Взагалі, на думку дієтологів, квасоля належить до десяти найкорисніших продуктів для
+                        здоров’я.<br><br>
+                        Особлива користь квасолі і її харчова цінність — у гармонійному поєднанні високоякісного білка з
+                        цукром, крохмалем, вітамінами, мінералами і незамінними амінокислотами.Щодо вітамінів, то це А,
+                        В1, В2, В6, С, РР, каротин і велика кількість вітаміну Е – природного антиоксиданту.</p>
+                </div>
+                <div class="col-6 imgBox">
+                    <img src="img/product-second.png" alt="Королівський Ясь" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="our-advantage" class="lg-container">
+        <h3>Наші переваги</h3>
+        <div class="container advantage-wrapper">
+            <div class="adv-item">
+                <img src="img/icon-quality.png" alt="Відмінна якість">
+                <p>Відмінна якість</p>
+            </div>
+            <div class="adv-item">
+                <img src="img/icon-taste.png" alt="Неймовірний смак">
+                <p>Неймовірний смак</p>
+            </div>
+            <div class="adv-item">
+                <img src="img/icon-work.png" alt="Ручна праця">
+                <p>Ручна праця</p>
+            </div>
+            <div class="adv-item">
+                <img src="img/icon-certificate.png" alt="Сертифікація">
+                <p>Серифікація</p>
+            </div>
+            <div class="adv-item">
+                <img src="img/icon-eco-prod.png" alt="Екологічно чистий продукт">
+                <p>Екологічно чистий<br>продукт</p>
+            </div>
+            <div class="adv-item">
+                <img src="img/icon-size.png" alt="Великі розміри">
+                <p>Великі розміри</p>
+            </div>
+        </div>
+    </div>
+    <div id="partners" class="lg-container container">
+        <h3>Партнери</h3>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/Rectangle.png"></div>
+                <div class="swiper-slide"><img src="img/Rectangle-1.png"></div>
+                <div class="swiper-slide"><img src="img/Rectangle-2.png"></div>
+                <div class="swiper-slide"><img src="img/Rectangle-3.png"></div>
+            </div>
+            <!-- Add Pagination -->
+            <!--<div class="swiper-pagination"></div>-->
+            <!-- Add Arrows -->
+            <!--<div class="swiper-button-next"></div>-->
+            <!--<div class="swiper-button-prev"></div>-->
+        </div>
+    </div>
+    <div id="achievement" class="lg-container">
+        <div class="indicators container">
+            <div class="ind-inner">
+                <p>5<span>років</span></p>
+                Якісної роботи
+            </div>
+            <div class="ind-inner">
+                <p>200<span>тонн</span></p>
+                Зібраної квасолі
+            </div>
+            <div class="ind-inner">
+                <p>12450<span>банок</span></p>
+                "Королівського Яся"
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script></body>
+</html>
