@@ -3,7 +3,6 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let CleanWebpackPlugin = require('clean-webpack-plugin');
 
-
 let conf = {
     entry: {
         index: './src/js/index.js'
@@ -62,9 +61,8 @@ let conf = {
             chunks: ['index'],
             filename: 'index.html',
             template: 'src/index.html',
-            // favicon: 'src/favicon.png'
+            favicon: 'src/favicon.png'
         }),
-
         new CleanWebpackPlugin(['docs'])
     ]
 };
