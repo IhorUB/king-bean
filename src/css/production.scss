@@ -94,4 +94,16 @@
     grid-template-columns: 1fr;
     grid-gap: 45px;
   }
+  .wrapper-production .step-prod img {
+    position: absolute;
+    top: -12%;
+    width: 70px;
+    height: 70px;
+  }
+  .wrapper-production .step-prod h6 {
+    text-align: center;
+  }
+  .wrapper-production .step-prod p:nth-child(4) {
+    text-align: justify;
+  }
 }
