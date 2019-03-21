@@ -1,0 +1,55 @@
+#achievement {
+  position: relative;
+  background: url("../img/achievement-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.indicators {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  padding: 8% 0;
+  position: relative;
+}
+
+.indicators .ind-inner {
+  font-size: 34px;
+  color: #FFF9F9;
+  text-align: center;
+  position: relative;
+  justify-self: center;
+}
+
+.indicators .ind-inner p {
+  font-size: 72px;
+}
+
+.indicators .ind-inner p span {
+  font-size: 18px;
+}
+
+@media(max-width: 576px) {
+  #achievement{
+    background-image: url("../img/achievment-responsive.png");
+  }
+  .indicators {
+    grid-template-columns: 1fr;
+  }
+  .indicators .ind-inner {
+    font-size: 24px;
+  }
+  .indicators .ind-inner p {
+    font-size: 48px;
+  }
+}
+
+@media(max-width: 768px) {
+  .indicators .ind-inner {
+    font-size: 27px;
+  }
+  .indicators .ind-inner p {
+    font-size: 55px;
+  }
+
+}
