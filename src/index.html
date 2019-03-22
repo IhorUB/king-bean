@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Королівський Ясь</title>
@@ -9,43 +10,69 @@
 
 <body>
     <header>
-        <nav>
+        <nav >
             <div class="container">
-                <div class="nav-wrapper">
+                <div class="nav-wrapper" >
                     <div class="nav-brand">
                         <img src="img/logo.png" class="img-responsive">
                     </div>
-                    <div class="toggle">
-                        <i class="fas fa-bars"></i>
+                    <div id="hamburger" class="hamburglar is-open">
+                        <div class="burger-icon">
+                            <div class="burger-container">
+                                <span class="burger-bun-top"></span>
+                                <span class="burger-filling"></span>
+                                <span class="burger-bun-bot"></span>
+                            </div>
+                        </div>
+                        <!-- svg ring containter -->
+                        <div class="burger-ring">
+                            <svg class="svg-ring">
+                                <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                            </svg>
+                        </div>
+                        <!-- the masked path that animates the fill to the ring -->
+                        <svg width="0" height="0">
+                            <mask id="mask">
+                                <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                            </mask>
+                        </svg>
+                        <div class="path-burger">
+                            <div class="animate-path">
+                                <div class="path-rotation"></div>
+                            </div>
+                        </div>
                     </div>
                     <ul class="nav-list">
                         <li><a href="#"><span class="first-nav">Головна<span></a></li>
-                        <li><a href="#"><span>Про нас</span></a></li>
-                        <li><a href="#"><span>Переваги</span></a></li>
-                        <li><a href="#"><span>Виробництво</span></a></li>
-                        <li><a href="#"><span>Галерея</span></a></li>
-                        <li><a href="#"><span>Контакти<span></a></li>
+                        <li><a href="#about" class="smooth"><span>Про нас</span></a></li>
+                        <li><a href="#our-advantage" class="smooth"><span>Переваги</span></a></li>
+                        <li><a href="#partners" class="smooth"><span>Партнери</span></a></li>
+                        <li><a href="#production" class="smooth"><span>Виробництво</span></a></li>
+                        <li><a href="#" class="smooth"><span>Галерея</span></a></li>
+                        <li><a href="#footer" class="smooth"><span>Контакти<span></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div id="header" class="banner-header">
             <div class="container">
-                <div >
+                <div>
                 </div>
-                 <div >
+                <div>
                 </div>
                 <div class="header-description">
                     <h2>Вирощений з любов’ю, а не<br> просто вироблений</h2>
-                    <p>В таку холодну погоду "Королівський Ясь", особливо смачно поєднується з багатьма домашніми стравами.
+                    <p>В таку холодну погоду "Королівський Ясь", особливо<br> смачно поєднується з багатьма домашніми<br> стравами.
                         Скуштуйте та переконайтесь!</p>
-                    <button type="button" class="btn-about">Дізнатись більше</button>
+                    <a href="#about" class="smooth">
+                        <button type="button" class="btn-about ">Дізнатись більше</button>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section id="about">
+        <section id="about" data-aos="fade-up">
             <div class="lg-container">
                 <div class="container">
                     <h3>Про нас</h3>
@@ -83,7 +110,7 @@
                 </div>
             </div>
         </section>
-        <div id="our-advantage" class="lg-container">
+        <div id="our-advantage" class="lg-container" data-aos="fade-up">
             <h3>Наші переваги</h3>
             <div class="container advantage-wrapper">
                 <div class="adv-item">
@@ -112,9 +139,8 @@
                 </div>
             </div>
         </div>
-        <div id="partners" class="lg-container container">
+        <div id="partners" class="lg-container container" data-aos="fade-up">
             <h3>Партнери</h3>
-            <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="img/Rectangle.png"></div>
@@ -129,7 +155,7 @@
                 <!--<div class="swiper-button-prev"></div>-->
             </div>
         </div>
-        <div id="achievement" class="lg-container">
+        <div id="achievement" class="lg-container" data-aos="fade-up">
             <div class="indicators container">
                 <div class="ind-inner">
                     <p>5<span>років</span></p>
@@ -145,7 +171,7 @@
                 </div>
             </div>
         </div>
-        <div id="production" class="lg-container">
+        <div id="production" class="lg-container" data-aos="fade-up">
             <div class="wrapper-production container">
                 <div class="step-prod">
                     <img src="img/icon2.0.png">
@@ -177,11 +203,11 @@
                 </div>
             </div>
         </div>
-        <div id="map">
+        <div id="map" data-aos="fade-up">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40920.61361178123!2d24.9707521!3d50.13236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472559e8277369c5%3A0xd18d9bdda227860e!2z0JHQtdGA0LvQuNC9LCDQm9GM0LLQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDgwNjEy!5e0!3m2!1sru!2sua!4v1552853236264" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </main>
-    <footer id="footer" class="lg-container container">
+    <footer id="footer" class="lg-container container" data-aos="fade-up">
         <div class="footer-wrapper">
             <div class="footer-logo">
                 <img src="img/main-logo.png" alt="Лого" class="img-responsive">
@@ -201,8 +227,8 @@
             </div>
             <div class="footer-contacts">
                 <p><span><i class="fas fa-map-marker-alt"></i></span>Україна, Львівська обл., м.&nbsp;Броди</p>
-                <p><span><i class="fas fa-mobile-alt"></i></span>096 977 3030</p>
-                <p><span><i class="far fa-envelope"></i></span>lada.organika@gmail.com</p>
+                <p><span><i class="fas fa-mobile-alt"></i></span><a href="tel:0969773030">096 977 3030</a></p>
+                <p><span><i class="far fa-envelope"></i></span><a href="mailto:lada.organika@gmail.com">lada.organika@gmail.com</a></p>
             </div>
             <div class="social-icon">
                 <a href="#"><i class="fab fa-facebook"></i></a>
@@ -211,21 +237,63 @@
             </div>
         </div>
     </footer>
+    <div class="codempora"><p>© Copyright 2019
+    <a href="http://codempora.com">Codempora</a>  |   All Rights Reserved</p>   
+    </div>
     <div class="scroll-top">
         <a href="#header"><button class="btn-scroll-top smooth"><i class="fas fa-arrow-up"></i></button></a>
     </div>
-    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
     <script type="text/javascript">
     $(document).ready(function() {
-        $('.fa-bars').click(function() {
+        $('.hamburglar').click(function() {
             $('.nav-list').toggleClass('active');
-            $('nav').toggleClass('bg-respons-color');    
+            $('nav').toggleClass('bg-respons-color');
         })
     })
     </script>
+        <script>
+  AOS.init();
+</script>
+    <script>
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $("nav").addClass("bg-nav-scroll-change")
+            }
+            if ($(window).width() < 993) {
+                $("nav").removeClass("bg-nav-scroll-change")
+            }
+        });
+    });
+    </script>
+    <script>
+    $('document').ready(function() {
+        var trigger = $('#hamburger'),
+            isClosed = true;
+
+        trigger.click(function() {
+            burgerTime();
+        });
+
+        function burgerTime() {
+            if (isClosed == true) {
+                trigger.removeClass('is-open');
+                trigger.addClass('is-closed');
+                isClosed = false;
+            } else {
+                trigger.removeClass('is-closed');
+                trigger.addClass('is-open');
+                isClosed = true;
+            }
+        }
+
+    });
+    </script>
+
+
 </body>
+
 </html>
