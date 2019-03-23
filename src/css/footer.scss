@@ -51,15 +51,16 @@
 }
 
 .scroll-top {
-    position: absolute;
-    bottom: -3rem;
-    right: 2rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .scroll-top .btn-scroll-top {
     padding: 7px 10px;
     color: #fff;
     background-color: #7ba97e;
+    opacity: 0.8;
 }
 
 .scroll-top .btn-scroll-top:hover {
@@ -70,17 +71,15 @@
 .codempora {
     text-align: center;
 }
-
-.codempora p a:hover {
-    transform: scale(2);
-    cursor: pointer;
-}
-
 .codempora p a {
     color: #7ba97e;
     font-weight: bold;
     text-decoration: none;
-    transform: scale(1.5);
+}
+
+.codempora p a:hover {
+    transform: scale(2);
+    cursor: pointer;
 }
 
 @media(max-width: 993px) {

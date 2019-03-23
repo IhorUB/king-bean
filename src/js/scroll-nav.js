@@ -1,3 +1,4 @@
+import $ from 'jquery';
 $(function() {
     $('.smooth').on('click', function(event) {
         let target = $(this.getAttribute('href'));
