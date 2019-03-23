@@ -26,9 +26,13 @@
     "node-sass": "^4.9.3",
     "path": "^0.12.7",
     "popper.js": "^1.14.7",
+    "prettier": "^1.16.4",
     "raw": "^0.1.4",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
+    "stylelint": "^9.10.1",
+    "stylelint-prettier": "^1.0.6",
+    "stylelint-webpack-plugin": "^0.10.5",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
