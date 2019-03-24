@@ -15,7 +15,7 @@
 
 .indicators .ind-inner {
   font-size: 34px;
-  color: #FFF9F9;
+  color: #fff9f9;
   text-align: center;
   position: relative;
   justify-self: center;
@@ -29,8 +29,8 @@
   font-size: 18px;
 }
 
-@media(max-width: 576px) {
-  #achievement{
+@media (max-width: 576px) {
+  #achievement {
     background-image: url("../img/achievment-responsive.jpg");
   }
   .indicators {
@@ -44,12 +44,11 @@
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .indicators .ind-inner {
     font-size: 27px;
   }
   .indicators .ind-inner p {
     font-size: 55px;
   }
-
 }
