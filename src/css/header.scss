@@ -50,7 +50,7 @@ nav {
       li {
         display: inline-block;
         list-style: none;
-        padding: 0 5px;
+        padding: 0 12px;
         a {
           text-decoration: none;
           font-style: normal;
@@ -58,7 +58,7 @@ nav {
           line-height: normal;
           font-size: 16px;
           color: #F9F9F9;
-          .first-nav {
+          .active-nav{
             border-bottom: 2px solid #D5AB29;
             padding-bottom: 2px;
           }
@@ -80,6 +80,7 @@ nav {
   font-size: 42px;
   margin: 4% 0;
   color: #f1f7f1;
+  font-weight: normal;
 }
 
 .header-description p {
@@ -106,6 +107,12 @@ nav {
   opacity: .8;
 }
 
+@media (min-width: 994px) and (max-width: 1200px) {
+  .nav-list li{
+    padding: 0 9px!important;
+  }
+  
+}
 @media(max-width: 993px) {
   nav .nav-wrapper {
     display: block;

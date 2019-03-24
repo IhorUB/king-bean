@@ -15,6 +15,7 @@ import './scroll-nav';
 import './burger';
 import './swiper-partners';
 import './scrollToTop';
+import './navActiveLink';
 
 
 
