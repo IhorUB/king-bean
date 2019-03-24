@@ -1,6 +1,6 @@
 #achievement {
   position: relative;
-  background: url("../img/achievement-banner.png");
+  background: url("../img/achievement-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -15,7 +15,7 @@
 
 .indicators .ind-inner {
   font-size: 34px;
-  color: #FFF9F9;
+  color: #fff9f9;
   text-align: center;
   position: relative;
   justify-self: center;
@@ -29,9 +29,9 @@
   font-size: 18px;
 }
 
-@media(max-width: 576px) {
-  #achievement{
-    background-image: url("../img/achievment-responsive.png");
+@media (max-width: 576px) {
+  #achievement {
+    background-image: url("../img/achievment-responsive.jpg");
   }
   .indicators {
     grid-template-columns: 1fr;
@@ -44,12 +44,11 @@
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .indicators .ind-inner {
     font-size: 27px;
   }
   .indicators .ind-inner p {
     font-size: 55px;
   }
-
 }

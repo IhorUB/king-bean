@@ -1,7 +1,29 @@
 #our-advantage {
-  background-image: url("../img/advantage-banner.png");
   background-size: cover;
   padding: 5% 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#23722a+0,439a4b+50,23722a+100 */
+  background: #23722a; /* Old browsers */
+  background: -moz-linear-gradient(
+      left,
+      #23722a 0%,
+      #439a4b 50%,
+      #23722a 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+      left,
+      #23722a 0%,
+      #439a4b 50%,
+      #23722a 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+      to right,
+      #23722a 0%,
+      #439a4b 50%,
+      #23722a 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#23722a', endColorstr='#23722a', GradientType=1); /* IE6-9 */
 }
 
 #our-advantage h3 {
@@ -21,7 +43,7 @@
 
 .advantage-wrapper .adv-item p {
   font-size: 24px;
-  color: #FDF8F8;
+  color: #fdf8f8;
 }
 
 @media(max-width: 650px) {
