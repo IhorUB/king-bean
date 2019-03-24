@@ -23,13 +23,15 @@
 }
 
 .wrapper-production .step-prod h6 {
+  margin: 0;
   font-size: 24px;
   font-weight: 500;
   color: #4F4F4F;
 }
 
 .wrapper-production .step-prod p {
-  margin-top: 13%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 /*first production card*/
@@ -80,7 +82,13 @@
   text-align: center;
 }
 
-@media (max-width: 960px) {
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .wrapper-production {
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 8px;
+  }
+}
+@media (max-width: 1200px) {
   .wrapper-production {
     grid-template-columns: 1fr 1fr;
   }

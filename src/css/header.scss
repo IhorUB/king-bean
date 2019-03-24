@@ -106,6 +106,10 @@ nav {
   cursor: pointer;
   opacity: .8;
 }
+.smooth{
+  text-decoration: none;
+  color: #000000;
+}
 
 @media (min-width: 994px) and (max-width: 1200px) {
   .nav-list li{
