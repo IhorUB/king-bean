@@ -23,6 +23,7 @@ h3 {
     color: #000000;
     text-align: center;
     padding: 35px 0;
+    font-weight: normal;
 }
 
 .container {
@@ -33,7 +34,7 @@ h3 {
     margin-left: auto;
 }
 
-/*Header*/
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
