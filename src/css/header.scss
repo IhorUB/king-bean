@@ -1,5 +1,5 @@
 .bg-respons-color {
-  background-color: #fff;
+  background-color: #3f9447;
 }
 
 .toggle-respons-color {
@@ -7,7 +7,7 @@
 }
 
 .bg-nav-scroll-change {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #3f9447;
 }
 
 .banner-header {
@@ -17,6 +17,7 @@
 }
 
 nav {
+  background-color: rgba(63, 148, 71, 0.5);
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -35,8 +36,8 @@ nav {
     }
     .hamburglar {
       position: absolute;
-      top: 5px;
-      right: 15px;
+      top: -5px;
+      right: 5px;
       font-size: 30px;
       display: none;
       color: #c6dfba;
@@ -139,11 +140,13 @@ nav {
 
 @media(max-width: 476px) {
   .nav-list li {
-    padding: 7px 5px !important;
+    padding: 15px 5px !important;
   }
   .nav-list li a {
     font-size: 16px;
-    color: #000;
+    span{
+      color: #fff;
+    }
   }
   .header-description h2 {
     font-size: 39px;
