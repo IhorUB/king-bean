@@ -1,168 +1,202 @@
 .bg-respons-color {
-  background-color: #3f9447;
+    background-color: #3f9447;
 }
 
 .toggle-respons-color {
-  color: black;
+    color: black;
 }
 
 .bg-nav-scroll-change {
-  background-color: #3f9447;
+    background-color: #3f9447;
 }
 
 .banner-header {
-  background-image: url('../img/header-banner.jpg');
-  background-size: cover;
-  padding-top: 11%;
+    background-image: url('../img/header-banner.jpg');
+    background-size: cover;
+    padding-top: 11%;
 }
 
 nav {
-  background-color: rgba(63, 148, 71, 0.5);
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  .nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .nav-brand {
-      width: 167px;
-      height: 57px;
-      margin: 0;
-      padding: 0;
-      img {
-        max-width: 100%;
-      }
-    }
-    .hamburglar {
-      position: absolute;
-      top: -5px;
-      right: 5px;
-      font-size: 30px;
-      display: none;
-      color: #c6dfba;
-      cursor: pointer;
-    }
-    
-    .nav-list {
-      text-align: right;
-      margin-top: 1rem;
-      li {
-        display: inline-block;
-        list-style: none;
-        padding: 0 12px;
-        a {
-          text-decoration: none;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          font-size: 16px;
-          color: #F9F9F9;
-          .active-nav{
-            border-bottom: 2px solid #D5AB29;
-            padding-bottom: 2px;
-          }
-          span:hover {
-            border-bottom: 2px solid #D5AB29;
-            padding-bottom: 2px;
-          }
+    background-color: rgba(63, 148, 71, 0.5);
+    position: fixed;
+    top: 0;
+    min-height: 90px;
+    width: 100%;
+    z-index: 10;
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-brand {
+            width: 139px;
+            height: 97px;
+            margin: 0;
+            padding: 0;
+
+            img {
+                padding: 5px;
+            }
         }
-      }
+
+        .hamburglar {
+            position: absolute;
+            top: 10px;
+            right: 5px;
+            font-size: 30px;
+            display: none;
+            color: #c6dfba;
+            cursor: pointer;
+        }
+
+        .nav-list {
+            text-align: right;
+            margin-top: 1rem;
+
+            li {
+                display: inline-block;
+                list-style: none;
+                padding: 0 12px;
+
+                a {
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    font-size: 16px;
+                    color: #F9F9F9;
+
+                    .active-nav {
+                        border-bottom: 2px solid #D5AB29;
+                        padding-bottom: 2px;
+                    }
+
+                    span:hover {
+                        border-bottom: 2px solid #D5AB29;
+                        padding-bottom: 2px;
+                    }
+                }
+            }
+        }
     }
-  }
 }
 
 .header-description {
-  padding: 8% 0;
+    padding: 8% 0;
 }
 
 .header-description h2 {
-  font-size: 42px;
-  margin: 4% 0;
-  color: #f1f7f1;
-  font-weight: normal;
+    font-size: 42px;
+    margin: 4% 0;
+    color: #f1f7f1;
+    font-weight: normal;
 }
 
 .header-description p {
-  font-size: 24px;
-  margin: 4% 0;
-  color: #dedbdb;
+    font-size: 24px;
+    margin: 4% 0;
+    color: #dedbdb;
 }
 
 .header-description .btn-about {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: normal;
-  margin: 4% 0;
-  padding: 15px 40px;
-  color: #f1f7f1;
-  border-radius: 50px;
-  border: none;
-  background: linear-gradient(90deg, #23722a 11.56%, #459b4d 51.28%, #26762d 92.34%);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 4% 0;
+    padding: 15px 40px;
+    color: #f1f7f1;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(90deg, #23722a 11.56%, #459b4d 51.28%, #26762d 92.34%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
 }
 
 .header-description .btn-about:hover {
-  cursor: pointer;
-  opacity: .8;
+    cursor: pointer;
+    opacity: .8;
 }
-.smooth{
-  text-decoration: none;
-  color: #000000;
+
+.smooth {
+    text-decoration: none;
+    color: #000000;
 }
 
 @media (min-width: 994px) and (max-width: 1200px) {
-  .nav-list li{
-    padding: 0 9px!important;
-  }
-  
+    .nav-list li {
+        padding: 0 9px !important;
+    }
+
 }
+
 @media(max-width: 993px) {
-  nav .nav-wrapper {
-    display: block;
-  }
-  .nav-list {
-    display: none;
-    padding: 0;
-  }
-  .nav-list li {
-    display: block !important;
-    text-align: center;
-    padding: 7px 5px !important;
-  }
-  .nav-list li a {
-    color: #000 !important;
-  }
-  .hamburglar {
-    display: block !important;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-  .active {
-    display: block;
-    transition: .5s;
-    text-align: center;
-  }
-  .header-description p {
-    font-size: 20px;
-  }
+    nav .nav-wrapper {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        padding: 0;
+    }
+
+    .nav-list li {
+        display: block !important;
+        text-align: center;
+        padding: 7px 5px !important;
+    }
+
+    .nav-list li a {
+        color: #000 !important;
+    }
+
+    .hamburglar {
+        display: block !important;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .active {
+        display: block;
+        transition: .5s;
+        text-align: center;
+    }
+
+    .header-description p {
+        font-size: 20px;
+    }
 }
 
 @media(max-width: 476px) {
-  .nav-list li {
-    padding: 15px 5px !important;
-  }
-  .nav-list li a {
-    font-size: 16px;
-    span{
-      color: #fff;
+    nav {
+        min-height: 60px;
     }
-  }
-  .header-description h2 {
-    font-size: 39px;
-  }
-  .header-description .btn-about {
-    padding: 10px 30px;
-  }
+
+    nav .nav-wrapper .nav-brand {
+        height: 78px;
+    }
+
+    nav .nav-wrapper .nav-brand img {
+        width: 115px;
+    }
+
+    .nav-list li {
+        padding: 15px 5px !important;
+    }
+
+    .nav-list li a {
+        font-size: 16px;
+
+        span {
+            color: #fff;
+        }
+    }
+
+    .header-description h2 {
+        font-size: 39px;
+    }
+
+    .header-description .btn-about {
+        padding: 10px 30px;
+    }
 }
