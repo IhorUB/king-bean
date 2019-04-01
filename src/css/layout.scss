@@ -67,3 +67,9 @@ h3 {
         max-width: 1140px;
     }
 }
+@media (max-width: 577px) {
+    .lg-container{
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
