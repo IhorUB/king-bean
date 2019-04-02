@@ -6,7 +6,8 @@ let stylelintPrettier = require('stylelint-webpack-plugin');
 
 let conf = {
   entry: {
-    index: './src/js/index.js'
+    index: './src/js/index.js',
+    gallery: './src/js/gallery.js'
   },
   output: {
     path: path.resolve(__dirname, './docs'),
@@ -70,6 +71,13 @@ let conf = {
       chunks: ['index'],
       filename: 'index.html',
       template: 'src/index.html',
+      favicon: 'src/favicon.png'
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      chunks: ['gallery'],
+      filename: 'gallery.html',
+      template: 'src/gallery.html',
       favicon: 'src/favicon.png'
     }),
     new CleanWebpackPlugin(['docs'])

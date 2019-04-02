@@ -1,115 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Королівський Ясь</title>
-	  <link rel="icon" type="image/png" href="favicon.PNG" />
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Королівський Ясь</title>
+    <link rel="icon" type="image/png" href="favicon.PNG"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	     <nav>
-            <div class="container">
-                <div class="nav-wrapper">
-                    <div class="nav-brand" data-aos="flip-down">
-                        <img src="img/logo.png" class="img-responsive">
+<!--style for gallery page ONLY  LAYOUT-->
+<style>
+    body {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        height: 100vh;
+    }
+
+    main {
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        align-items: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        margin-top: 7rem;
+
+    }
+
+    header {
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    footer {
+        flex-shrink: 0;
+        min-height: 100px;
+    }
+</style>
+
+<!--style for login page ONLY-->
+
+
+<nav>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="nav-brand" data-aos="flip-down">
+                <img src="img/logo.png" class="img-responsive">
+            </div>
+            <div id="hamburger" class="hamburglar">
+                <div class="burger-icon">
+                    <div class="burger-container">
+                        <span class="burger-bun-top"></span>
+                        <span class="burger-filling"></span>
+                        <span class="burger-bun-bot"></span>
                     </div>
-                    <div id="hamburger" class="hamburglar">
-                        <div class="burger-icon">
-                            <div class="burger-container">
-                                <span class="burger-bun-top"></span>
-                                <span class="burger-filling"></span>
-                                <span class="burger-bun-bot"></span>
-                            </div>
-                        </div>
-                        <!-- svg ring containter -->
-                        <div class="burger-ring">
-                            <svg class="svg-ring">
-                                <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
-                            </svg>
-                        </div>
-                        <!-- the masked path that animates the fill to the ring -->
-                        <svg width="0" height="0">
-                            <mask id="mask">
-                                <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
-                            </mask>
-                        </svg>
-                        <div class="path-burger">
-                            <div class="animate-path">
-                                <div class="path-rotation"></div>
-                            </div>
-                        </div>
+                </div>
+                <!-- svg ring containter -->
+                <div class="burger-ring">
+                    <svg class="svg-ring">
+                        <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+                              d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"/>
+                    </svg>
+                </div>
+                <!-- the masked path that animates the fill to the ring -->
+                <svg width="0" height="0">
+                    <mask id="mask">
+                        <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                              stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"/>
+                    </mask>
+                </svg>
+                <div class="path-burger">
+                    <div class="animate-path">
+                        <div class="path-rotation"></div>
                     </div>
-                    <ul class="nav-list">
-                        <li><a href="index.html" class="smooth"><span class="active-nav nav-link">Головна</span></a></li>
-                        <li><a href="#about" class="smooth "><span class="nav-link">Про нас</span></a></li>
-                        <li><a href="#advantage" class="smooth "><span class="nav-link">Переваги</span></a></li>
-                        <li><a href="#partners" class="smooth "><span class="nav-link">Партнери</span></a></li>
-                        <li><a href="#production" class="smooth "><span class="nav-link">Виробництво</span></a></li>
-                        <li><a href="gallery.html" class="smooth "><span class="nav-link">Галерея</span></a></li>
-                        <li><a href="#footer" class="smooth"><span class="nav-link">Контакти</span></a></li>
-                    </ul>
                 </div>
             </div>
-        </nav>
-
-
- <div id="galleryherepls">
-        <img src="img/header-banner.jpg"
-            alt="Title here"
-            title="Or here(more priority)"
-            data-desc="some description"
-            data-category="image category here"
-            data-fullsrc="path/to/full/image."
-        />        
-        ...        
-        <img src="img/header-banner.jpg"
-            alt="Image"
-            data-desc="Example"
-            data-fullsrc="imgs/image42.jpg"
-        />
-    </div>
-
-
-
-	<footer id="footer" class="lg-container container" data-aos="fade-up">
-        <div class="footer-wrapper">
-            <div class="footer-logo">
-                <img src="img/main-logo.png" alt="Лого" class="img-responsive">
-            </div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="index.html" class="smooth"><span class="active-nav nav-link">Головна</span></a></li>
-                    <li><a href="#about" class="smooth "><span class="nav-link">Про нас</span></a></li>
-                    <li><a href="#advantage" class="smooth "><span class="nav-link">Переваги</span></a></li>
-                    <li><a href="#partners" class="smooth "><span class="nav-link">Партнери</span></a></li>
-                </ul>
-                <ul>
-                    <li><a href="#production" class="smooth "><span class="nav-link">Виробництво</span></a></li>
-                    <li><a href="#" class="smooth "><span class="nav-link">Галерея</span></a></li>
-                    <li><a href="#footer" class="smooth"><span class="nav-link">Контакти</span></a></li>
-                </ul>
-            </div>
-            <div class="footer-contacts">
-                <p><span><i class="fas fa-map-marker-alt"></i></span>Україна, Львівська обл., м.&nbsp;Броди</p>
-                <p><span><i class="fas fa-mobile-alt"></i></span><a href="tel:0969773030">096 977 3030</a></p>
-                <p><span><i class="far fa-envelope"></i></span><a href="mailto:lada.organika@gmail.com">lada.organika@gmail.com</a>
-                </p>
-            </div>
-            <div class="social-icon">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+            <ul class="nav-list">
+                <li><a href="index.html" class="smooth"><span class="active-nav nav-link">Головна</span></a></li>
+                <li><a href="#about" class="smooth "><span class="nav-link">Про нас</span></a></li>
+                <li><a href="#advantage" class="smooth "><span class="nav-link">Переваги</span></a></li>
+                <li><a href="#partners" class="smooth "><span class="nav-link">Партнери</span></a></li>
+                <li><a href="#production" class="smooth "><span class="nav-link">Виробництво</span></a></li>
+                <li><a href="gallery.html" class="smooth "><span class="nav-link">Галерея</span></a></li>
+                <li><a href="#footer" class="smooth"><span class="nav-link">Контакти</span></a></li>
+            </ul>
         </div>
-    </footer>
+    </div>
+</nav>
+<main>
     <div class="container">
-        <div class="codempora">
-            <p>© Copyright 2019
-                <a href="http://codempora.com">Codempora</a> | All Rights Reserved</p>
+        <div class="gallery-wrap">
+            <div class="gallery">
+                <a target="_blank" href="img/pic.jpg">
+                    <img src="img/pic.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic1.jpg">
+                    <img src="img/pic1.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic2.jpg">
+                    <img src="img/pic2.jpg" alt="Cinque Terre">
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic3.jpg">
+                    <img src="img/pic3.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic4.jpg">
+                    <img src="img/pic4.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic5.jpg">
+                    <img src="img/pic5.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic6.jpg">
+                    <img src="img/pic6.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic7.jpg">
+                    <img src="img/pic7.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic9.jpg">
+                    <img src="img/pic9.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic8.jpg">
+                    <img src="img/pic8.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic10.jpg">
+                    <img src="img/pic10.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic11.jpg">
+                    <img src="img/pic11.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic12.jpg">
+                    <img src="img/pic12.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic13.jpg">
+                    <img src="img/pic13.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic14.jpg">
+                    <img src="img/pic14.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic15.jpg">
+                    <img src="img/pic15.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic16.jpg">
+                    <img src="img/pic16.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic17.jpg">
+                    <img src="img/pic17.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic18.jpg">
+                    <img src="img/pic18.jpg" alt="Cinque Terre">
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic19.jpg">
+                    <img src="img/pic19.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic20.jpg">
+                    <img src="img/pic20.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img/pic21.jpg">
+                    <img src="img/pic21.jpg" alt="Cinque Terre" >
+                </a>
+                <div class="desc"><p>Add a description of the image here Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. A aperiam asperiores atque culpa dolore dolorem dolores ducimus eos est, facere
+                    hic minima neque odio quam qui ratione sapiente sit veniam.</p></div>
+            </div>
         </div>
     </div>
-    <div class="scroll-top">
-        <button class="btn-scroll-top smooth"><i class="fas fa-arrow-up"></i></button>
+</main>
+
+<footer id="footer" class="lg-container container" data-aos="fade-up">
+    <div class="footer-wrapper">
+        <div class="footer-logo">
+            <img src="img/main-logo.png" alt="Лого" class="img-responsive">
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html" class="smooth"><span class="active-nav nav-link">Головна</span></a></li>
+                <li><a href="#about" class="smooth "><span class="nav-link">Про нас</span></a></li>
+                <li><a href="#advantage" class="smooth "><span class="nav-link">Переваги</span></a></li>
+                <li><a href="#partners" class="smooth "><span class="nav-link">Партнери</span></a></li>
+            </ul>
+            <ul>
+                <li><a href="#production" class="smooth "><span class="nav-link">Виробництво</span></a></li>
+                <li><a href="#" class="smooth "><span class="nav-link">Галерея</span></a></li>
+                <li><a href="#footer" class="smooth"><span class="nav-link">Контакти</span></a></li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <p><span><i class="fas fa-map-marker-alt"></i></span>Україна, Львівська обл., м.&nbsp;Броди</p>
+            <p><span><i class="fas fa-mobile-alt"></i></span><a href="tel:0969773030">096 977 3030</a></p>
+            <p><span><i class="far fa-envelope"></i></span><a href="mailto:lada.organika@gmail.com">lada.organika@gmail.com</a>
+            </p>
+        </div>
+        <div class="social-icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
+</footer>
+<div class="container">
+    <div class="codempora">
+        <p>© Copyright 2019
+            <a href="http://codempora.com">Codempora</a> | All Rights Reserved</p>
+    </div>
+</div>
+<div class="scroll-top">
+    <button class="btn-scroll-top smooth"><i class="fas fa-arrow-up"></i></button>
+</div>
 </body>
 </html>
